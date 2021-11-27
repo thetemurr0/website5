@@ -1,0 +1,167 @@
+/* Core styles */
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./static/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family:'Poppins';
+    src: url(./Poppins/Poppins-SemiBold.ttf);
+}
+
+body {
+    background-image: url('./images/bg-desktop.png');
+    background-color: #674baf;
+}
+
+/* Main section */
+
+main {
+    margin: 2rem;
+}
+
+.content {
+    margin: 2rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.illust {
+    flex: 1;
+}
+
+.illust img {
+    max-width: 100%;
+}
+
+.text {
+    flex: 1;
+}
+
+.text {
+    color: white;
+}
+
+.text h1 {
+    margin: auto;
+    line-height: 1.5;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.text p {
+    margin: 1.5rem 0 1rem 0;
+    line-height: 1.7;
+    font-family: 'poppins';
+}
+
+.btn {
+    border-radius: 48px;
+    font-family: 'Open Sans';
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    background-color: white;
+    color: #674baf;
+    border: none;
+    box-shadow: 0 0.2rem 0.5rem 0.1rem #333;
+    font-family:'poppins';
+    cursor:pointer;
+}
+
+/* Footer section */
+
+footer {
+    margin:0 0;
+  
+}
+
+ul {
+    float: right;
+    margin-right: 50px;
+}
+
+ul li {
+    margin: 0 10px;
+    list-style: none;
+    display: inline-block;
+    padding: 15px 15px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+li:hover {
+    color: rgb(225, 89, 134);
+}
+
+/* Responsive styles */
+@media only screen and (max-width:576px) {
+    
+    body {
+        font-family: 'poppins';
+        margin: 0;
+        padding: 0;
+        background-image: url('./images/bg-mobile.png');
+    }
+    
+    main img {
+        width: 180px;
+    }
+
+    .content {
+        display: inline-block;
+    }
+    
+    .illust {
+        width: 100%;
+    }
+    
+    .illust img {
+        width: 350px;
+        height: 200px;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    .text p {
+        font-size: 15px;
+        margin-top: 15px;
+        font-weight: 300;
+    }
+
+    .btn {
+        margin-top: 15px;
+        width: 65%;
+        padding: 10px 15px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+    }
+
+    ul li {
+       display: inline-block;
+       padding: 0;
+       margin: 5px;
+    }
+
+}
+
